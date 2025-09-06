@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <span>item 1: não tem classe e nem id listado, então vai seguir a regra 1 (pinta a tag li), ficando com a cor vermelha.</span>
+
+    <span>item 2: pertence à classe "fruta", então vai seguir a regra 3 (pq classe é mais específico que tag), ficando cinza.</span>
+
+    <span>item 3: tem id="lip2" e classe "fruta", então vai seguir a regra 6. (o id é mais específico que classe e tag), ficando azul.</span>
+
+    <span>item 4: tem id="lip3" e classe "fruta", então vai seguir a regra 7 (#lip3.fruta = laranja), ficando laranja.</span>
+
+    <span>item 5: tem id="lip4" e classe "fruta", então vai seguir a regra 3 (pq a classe não foi incluida em nenhuma regra), ficando cinza.</span>
+
+    <span>item 6: pertence à classe "churras", então vai seguir a regra 4 (li+li.churras = preto, pois vem logo depois de outro li), ficando preto.</span>
+
+    <span>item 7: pertence à classe "churras", então vai seguir a regra 2, ficando verde. A regra 4 não vale pq ele não vem logo depois de uma fruta</span>
+
+    <span>item 8: tem id="lip7", classe "churras" e atributo draggable="true", então vai seguir a regra 5 (.churras[draggable="true"] = magenta). A regra 5 é mais específica, ficando magenta.</span>
+</body>
+</html>
